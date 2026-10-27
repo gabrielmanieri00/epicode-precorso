@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione app</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1b2e;
+            color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 15px;
+        }
+ 
+        h1 {
+            color: #ff7a59;
+            text-align: center;
+        }
+ 
+        h3 {
+            text-align: center;
+            font-weight: normal;
+        }
+ 
+        form {
+            background-color: #2b2742;
+            padding: 25px 30px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 400px;
+        }
+        div {
+            margin-bottom: 15px;
+        } 
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+ 
+        input[type="checkbox"] + label {
+            display: inline;
+            margin-left: 6px;
+        }
+
+        input[type="radio"] + label {
+            display: inline;
+            margin-left: 6px;
+        }
+ 
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff7a59;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+ 
+        button:hover {
+            background-color: #e8623f;
+        }
+        .termini {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #55507a;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ciao! Benvenuto da GabMusic</h1>
+    <h3>Inserisci i tuoi dati per la registrazione</h3>
+    <form onsubmit="alert ('Registrazione inviata!')">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" placeholder="Inserisci il tuo nome" required />
+        </div>
+        <div>
+            <label for="cognome">Cognome:</label>
+            <input type="text" placeholder="Inserisci il tuo cognome" required />
+        </div>
+        <div>
+            <label for="email">Indirizzo email:</label>
+            <input type="email" placeholder="Inserisci un indirizzo email" required />
+        </div>
+        <div>
+            <label for="password">Inserisci una password:</label>
+            <input type="password" placeholder="Inserisci una password" required />
+        </div>
+        <div>
+            <label for="data">Data di nascita:</label>
+            <input type="date" placeholder="Inserisci la tua data di nascita" required />
+        </div>
+       
+        <div>
+             <label for="numero">Numero di telefono:</label>
+            <input type="tel" placeholder="Inserisci il tuo numero di telefono" required />
+        </div>
+        <h3>Se vuoi seleziona i tuoi generi musicali preferiti</h3>
+        <div>
+            <input type="checkbox" id="rock" />
+            <label for="rock">Rock</label>
+        </div>
+        <div>
+            <input type="checkbox" id="punk" />
+            <label for="punk">Punk</label>
+        </div>
+        <div>
+            <input type="checkbox" id="indie" />
+            <label for="indie">Indie</label>
+        </div>
+        <div>
+            <input type="checkbox" id="pop" />
+            <label for="pop">Pop</label>
+        </div>
+        <div>
+            <input type="checkbox" id="rap" />
+            <label for="rap">Rap</label>
+        </div>
+        <div class="termini">
+            <input type="radio" id="termini" name="termini" required />
+            <label for="termini">Accetta termini e condizioni</label>
+        </div>
+        <button type="submit">Procedi alla registrazione</button> 
+    </form> 
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <style>
+        .image-container{
+            height: 500px;
+            background-image: url(https://kuriu-wordpress-media-bucket.s3.eu-west-1.amazonaws.com/wp-content/magazine/2023/12/13130320/shutterstock_2321771333-scaled.jpg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #luoghi-correlati{
+            padding: 22px;
+            margin-bottom: 0px;
+            margin-top: 56px;
+            color: white;
+            border-radius: 6px;
+            background: linear-gradient(90deg, #558982, #eadac4);
+        }
+
+        .elementi-lista{
+            text-decoration: none;
+            color: #558982
+        }
+
+        .elementi-lista:hover{
+            color: #eadac4
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-section">
+        <div class="image-container"></div>
+        <div>
+            <h1 id="Luogo">Lago di Pilato</h1>
+            <h3 id="Regione">Marche</h3>
+            <p id="Autore"><a id="link" href="https://kuriuland.it/redattore/fabio-giusti/">Autore: Fabio Giusti</a></p>
+        </div>
+        <div>
+            <h6 id="luoghi-correlati">Luoghi correlati:</h6>
+            <ul>
+                <li><a class="elementi-lista" href="castelluccio.html">Piana di Castelluccio di Norcia</a></li>
+                <li><a class="elementi-lista" href="infernaccio.html">Gole dell'Infernaccio </a></li>
+                <li><a class="elementi-lista" href="frasassi.html">Grotte di Frasassi</a></li>
+                <li><a class="elementi-lista" href="lamerosse.html">Lame Rosse</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <a id="Homepage" href="index.html">Homepage</a>
+    </footer>
+</body>
+</html>
